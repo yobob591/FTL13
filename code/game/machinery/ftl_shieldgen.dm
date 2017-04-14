@@ -12,14 +12,14 @@
 	icon_state = "shield_gen"
 	var/obj/machinery/atmospherics/components/unary/terminal/atmos_terminal
 	var/obj/machinery/power/terminal/power_terminal
-	var/plasma_charge = 50
-	var/plasma_charge_max = 50
-	var/power_charge = 100
-	var/power_charge_max = 100
+	var/plasma_charge = 0
+	var/plasma_charge_max = 40
+	var/power_charge = 90
+	var/power_charge_max = 90
 	var/charging_plasma = 0
 	var/charging_power = 0
-	var/charge_rate = 35000
-	var/plasma_charge_rate = 13
+	var/charge_rate = 30000
+	var/plasma_charge_rate = 10
 	var/list/shield_barrier_objs = list()
 	var/on = 1
 	var/do_update = 1
@@ -68,7 +68,7 @@
 		update_physical()
 		return
 	if(power_charge < power_charge_max)		// if there's power available, try to charge
-		var/load = min((power_charge_max-power_charge)/CELLRATE, charge_rate)		// charge at set rate, limited to spare capacity
+		var/load = charge_rate		// FUCK SEC
 		power_terminal.power_requested = load
 		power_charge += min((power_charge_max-power_charge), power_terminal.last_power_received * CELLRATE)
 		charging_power = 1
@@ -83,17 +83,29 @@
 		charging_plasma = 0
 		return
 	var/datum/gas_mixture/air1 = atmos_terminal.AIR1
-	if(!atmos_terminal.NODE1 || !atmos_terminal.AIR1 || !("plasma" in air1.gases) || air1.gases["plasma"][MOLES] <= 5) // Turn off if the machine won't work.
+	var/list/cached_gases = air1.gases
+	air1.assert_gas("plasma")
+	if(cached_gases.len > 1) //If it contains anything other than plasma, eject it
+		var/plasma = cached_gases["plasma"][MOLES] //don't eject the plasma
+		cached_gases["plasma"][MOLES] = 0
+		var/datum/gas_mixture/temp_air = air1.remove(air1.total_moles())
+		var/turf/T = get_turf(src)
+		T.assume_air(temp_air)
+		air_update_turf()
+		air1.assert_gas("plasma")
+		cached_gases["plasma"][MOLES] = plasma
+		air1.garbage_collect()
+	if(!atmos_terminal.NODE1 || !atmos_terminal.AIR1 || !("plasma" in cached_gases) || cached_gases["plasma"][MOLES] <= 5) // Turn off if the machine won't work.
 		charging_plasma = 0
 		update_icon()
 		update_physical()
 		return
 	if(!charging_plasma)
 		charging_plasma = 1
-	var/remove_amount = min(min(air1.gases["plasma"][MOLES], plasma_charge_max-plasma_charge), plasma_charge_rate)
+	var/remove_amount = min(min(cached_gases["plasma"][MOLES], plasma_charge_max-plasma_charge), plasma_charge_rate)
 	if(remove_amount > 0)
 		plasma_charge += remove_amount
-		air1.gases["plasma"][MOLES] -= remove_amount
+		cached_gases["plasma"][MOLES] -= remove_amount
 	else
 		charging_plasma = 0
 	update_icon()

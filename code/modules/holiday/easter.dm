@@ -11,7 +11,7 @@
 	earliest_start = 0
 
 /datum/round_event/easter/announce()
-	priority_announce(pick("Hip-hop into Easter!","Find some Bunny's stash!","Today is National 'Hunt a Wabbit' Day.","Be kind, give Chocolate Eggs!"))
+	priority_announce(pick("Hip-xo into Easter!","Find some Bunny's stash!","Today is National 'Hunt a Wabbit' Day.","Be kind, give Chocolate Eggs!"))
 
 
 /datum/round_event_control/rabbitrelease
@@ -158,7 +158,7 @@
 		/datum/reagent/consumable/sugar = 1
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/hotcrossbun
-	category = CAT_FOOD
+	category = CAT_MISCFOOD
 
 
 /obj/item/weapon/reagent_containers/food/snacks/store/cake/brioche
@@ -182,7 +182,7 @@
 		/datum/reagent/consumable/sugar = 2
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/store/cake/brioche
-	category = CAT_FOOD
+	category = CAT_MISCFOOD
 
 /obj/item/weapon/reagent_containers/food/snacks/scotchegg
 	name = "scotch egg"
@@ -202,7 +202,7 @@
 		/obj/item/weapon/reagent_containers/food/snacks/faggot = 1
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/scotchegg
-	category = CAT_FOOD
+	category = CAT_MISCFOOD
 
 /obj/item/weapon/reagent_containers/food/snacks/soup/mammi
 	name = "Mammi"
@@ -219,7 +219,7 @@
 		/datum/reagent/consumable/milk = 5
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/soup/mammi
-	category = CAT_FOOD
+	category = CAT_MISCFOOD
 
 /obj/item/weapon/reagent_containers/food/snacks/chocolatebunny
 	name = "chocolate bunny"
@@ -236,4 +236,4 @@
 		/obj/item/weapon/reagent_containers/food/snacks/chocolatebar = 1
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/chocolatebunny
-	category = CAT_FOOD
+	category = CAT_MISCFOOD

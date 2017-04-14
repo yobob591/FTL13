@@ -410,7 +410,7 @@ Turf and target are seperate in case you want to teleport some distance from a t
 			if(include_link)
 				. += "<a href='?priv_msg=[ckey]'>"
 			. += key
-			if(isnum(C.ip_intel) && isnum(config.ipintel_rating_bad) && C.ip_intel >= config.ipintel_rating_bad)
+			if(C && config && isnum(C.ip_intel) && isnum(config.ipintel_rating_bad) && C.ip_intel >= config.ipintel_rating_bad)
 				. += " (ipintel=[C.ip_intel*100]%)"
 		if(!C)
 			. += "\[DC\]"
@@ -1449,7 +1449,7 @@ proc/pick_closest_path(value)
 			. += "<a href='?priv_msg=[T ? "ticket;ticket=\ref[T]" : ckey][anchor_params ? ";[anchor_params]" : ""]'>"
 		if(isnum(C.ip_intel) && isnum(config.ipintel_rating_bad) && C.ip_intel >= config.ipintel_rating_bad)
 			. += " (ipintel=[C.ip_intel*100]%)"
-		
+
 		if(C && C.holder && C.holder.fakekey && !include_name)
 			. += "Administrator"
 		else
@@ -1530,7 +1530,7 @@ proc/pick_closest_path(value)
 					if(!found)
 						var/T = lowertext(original_word)
 						if(T == "cap") T = "captain"
-						if(T == "hop") T = "head of personnel"
+						if(T == "xo") T = "executive officer"
 						if(T == "cmo") T = "chief medical officer"
 						if(T == "ce")  T = "chief engineer"
 						if(T == "hos") T = "head of security"
@@ -1560,4 +1560,4 @@ proc/pick_closest_path(value)
 	data["key"] = global.comms_key
 	data["announce_channel"] = channel
 	data["announce"] = message
-	world.Export("http://[global.bot_ip]/?[params2list(data)]")
+	world.Export("http://[global.bot_ip]/?[list2params(data)]")

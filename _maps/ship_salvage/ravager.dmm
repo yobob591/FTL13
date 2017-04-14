@@ -18,24 +18,6 @@
 /obj/structure/lattice/catwalk,
 /turf/open/space,
 /area/template_noop)
-"af" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/power/shipweapon{
-	dir = 1
-	},
-<<<<<<< HEAD
-=======
-/obj/machinery/power/apc/priority{
-	dir = 4;
-	moving_diagonally = 0;
-	name = "East Bump";
-	pixel_x = 24;
-	pixel_y = 0
-	},
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-/obj/structure/cable,
-/turf/open/space,
-/area/ship_salvage/component/c_1_1)
 "ag" = (
 /turf/closed/wall/r_wall,
 /area/ship_salvage/component/c_1_1)
@@ -49,24 +31,6 @@
 /area/ship_salvage/hull)
 "aj" = (
 /turf/closed/wall/r_wall,
-/area/ship_salvage/component/c_5_1)
-"ak" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/power/shipweapon{
-	dir = 1
-	},
-<<<<<<< HEAD
-=======
-/obj/machinery/power/apc/priority{
-	dir = 8;
-	moving_diagonally = 0;
-	name = "West Bump";
-	pixel_x = -24;
-	pixel_y = 0
-	},
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-/obj/structure/cable,
-/turf/open/space,
 /area/ship_salvage/component/c_5_1)
 "al" = (
 /obj/structure/lattice/catwalk,
@@ -98,7 +62,6 @@
 /area/template_noop)
 "aq" = (
 /obj/structure/lattice/catwalk,
-/obj/machinery/light/built,
 /mob/living/simple_animal/hostile/syndicate/civilian,
 /turf/open/space,
 /area/template_noop)
@@ -123,25 +86,6 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_2_1)
-"at" = (
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-<<<<<<< HEAD
-/obj/machinery/light/built{
-	dir = 4
-=======
-/obj/machinery/power/apc/priority{
-	dir = 4;
-	moving_diagonally = 0;
-	name = "East Bump";
-	pixel_x = 24;
-	pixel_y = 0
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-	},
-/turf/open/floor/plasteel/elevatorshaft,
-/area/ship_salvage/component/c_4_1)
 "au" = (
 /obj/structure/window/reinforced{
 	dir = 8;
@@ -304,9 +248,6 @@
 /turf/closed/wall/r_wall,
 /area/ship_salvage/hull)
 "aY" = (
-/obj/machinery/light/built{
-	dir = 4
-	},
 /turf/open/floor/plasteel/darkred,
 /area/ship_salvage/component/c_4_1)
 "aZ" = (
@@ -334,40 +275,10 @@
 "bd" = (
 /turf/open/floor/plasteel/darkred,
 /area/ship_salvage/component/c_3_2)
-"be" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-<<<<<<< HEAD
-=======
-/obj/machinery/power/apc/priority{
-	dir = 1;
-	name = "North Bump";
-	pixel_x = 0;
-	pixel_y = 24
-	},
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-/obj/machinery/porta_turret/ai,
-/obj/machinery/porta_turret_cover,
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_3_2)
 "bf" = (
 /obj/machinery/mac_barrel,
 /obj/structure/plasticflaps/mining,
 /turf/open/floor/plasteel,
-/area/ship_salvage/component/c_4_1)
-"bg" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_4_1)
 "bh" = (
 /obj/structure/window/reinforced{
@@ -432,31 +343,6 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_3_2)
-"bp" = (
-<<<<<<< HEAD
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/open/floor/plasteel/vault{
-	dir = 5
-	},
-/area/ship_salvage/component/c_3_4)
-=======
-/obj/machinery/power/apc/priority{
-	dir = 8;
-	moving_diagonally = 0;
-	name = "West Bump";
-	pixel_x = -24;
-	pixel_y = 0
-	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/turf/open/floor/wood,
-/area/ship_salvage/component/c_5_4)
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
 "bq" = (
 /obj/machinery/mac_breech,
 /turf/open/floor/pod,
@@ -472,20 +358,6 @@
 /obj/machinery/light{
 	icon_state = "tube1";
 	dir = 8
-	},
-<<<<<<< HEAD
-=======
-/obj/machinery/power/apc/priority{
-	dir = 8;
-	moving_diagonally = 0;
-	name = "West Bump";
-	pixel_x = -24;
-	pixel_y = 0
-	},
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2"
 	},
 /turf/open/floor/plasteel/redblue,
 /area/ship_salvage/component/c_1_4)
@@ -538,19 +410,6 @@
 "bB" = (
 /turf/open/floor/pod,
 /area/ship_salvage/component/c_4_2)
-"bC" = (
-<<<<<<< HEAD
-/obj/machinery/light/built,
-=======
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-/turf/open/floor/wood,
-/area/ship_salvage/component/c_5_4)
 "bD" = (
 /turf/open/floor/engine,
 /turf/open/floor/plasteel/warningline{
@@ -568,30 +427,6 @@
 	dir = 5
 	},
 /area/ship_salvage/component/c_5_2)
-"bG" = (
-/obj/structure/cable{
-	d1 = 1;
-<<<<<<< HEAD
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/turf/closed/wall/r_wall,
-/area/ship_salvage/hull)
-=======
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/turf/open/floor/plasteel/vault{
-	dir = 5
-	},
-/area/ship_salvage/component/c_3_4)
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
 "bH" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -610,14 +445,6 @@
 "bI" = (
 /obj/machinery/atmospherics/components/unary/portables_connector,
 /obj/machinery/portable_atmospherics/canister/toxins,
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_3_2)
-"bJ" = (
-/obj/machinery/vending/tool,
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_3_2)
-"bK" = (
-/obj/structure/closet/toolcloset,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_3_2)
 "bL" = (
@@ -649,26 +476,6 @@
 /mob/living/simple_animal/hostile/syndicate/civilian,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_5_2)
-"bO" = (
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-<<<<<<< HEAD
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/turf/closed/wall/r_wall,
-=======
-/turf/open/floor/plasteel/vault{
-	dir = 5
-	},
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-/area/ship_salvage/component/c_3_4)
 "bP" = (
 /turf/open/floor/engine,
 /turf/open/floor/plasteel/warningline{
@@ -676,29 +483,12 @@
 	dir = 10
 	},
 /area/ship_salvage/component/c_1_2)
-"bQ" = (
-/obj/machinery/ftl_shieldgen{
-	icon_state = "shield_gen_off";
-	on = 0;
-	plasma_charge = 0;
-	power_charge = 0
-	},
-/turf/open/floor/engine,
-/area/ship_salvage/component/c_1_2)
 "bR" = (
 /turf/open/floor/engine,
 /turf/open/floor/plasteel/warningline{
 	tag = "icon-warningline (SOUTHEAST)";
 	dir = 6
 	},
-/area/ship_salvage/component/c_1_2)
-"bS" = (
-/obj/machinery/atmospherics/pipe/simple{
-	tag = "icon-intact (SOUTHEAST)";
-	icon_state = "intact";
-	dir = 6
-	},
-/turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_1_2)
 "bT" = (
 /obj/machinery/atmospherics/pipe/simple{
@@ -901,29 +691,12 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_5_2)
-"cm" = (
-/obj/machinery/atmospherics/pipe/simple{
-	tag = "icon-intact (SOUTHWEST)";
-	icon_state = "intact";
-	dir = 10
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_5_2)
 "cn" = (
 /turf/open/floor/engine,
 /turf/open/floor/plasteel/warningline{
 	tag = "icon-warningline (SOUTHWEST)";
 	dir = 10
 	},
-/area/ship_salvage/component/c_5_2)
-"co" = (
-/obj/machinery/ftl_shieldgen{
-	icon_state = "shield_gen_off";
-	on = 0;
-	plasma_charge = 0;
-	power_charge = 0
-	},
-/turf/open/floor/engine,
 /area/ship_salvage/component/c_5_2)
 "cp" = (
 /turf/open/floor/engine,
@@ -993,15 +766,6 @@
 "cB" = (
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_1_2)
-"cC" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_1_2)
 "cD" = (
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_2_2)
@@ -1021,15 +785,6 @@
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_4_2)
 "cI" = (
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_5_2)
-"cJ" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_5_2)
 "cK" = (
@@ -1142,32 +897,6 @@
 	},
 /turf/open/floor/plasteel/darkred,
 /area/ship_salvage/component/c_1_3)
-"dd" = (
-<<<<<<< HEAD
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/turf/closed/wall/r_wall,
-/area/ship_salvage/hull)
-=======
-/obj/machinery/power/apc/priority{
-	dir = 4;
-	moving_diagonally = 0;
-	name = "East Bump";
-	pixel_x = 24;
-	pixel_y = 0
-	},
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/open/floor/plasteel/vault{
-	dir = 5
-	},
-/area/ship_salvage/component/c_3_4)
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
 "de" = (
 /obj/structure/table/reinforced,
 /obj/item/device/multitool,
@@ -1279,20 +1008,6 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2";
-	pixel_y = 0
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_1_3)
-"dy" = (
-/obj/structure/cable{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/machinery/power/apc/priority{
-	dir = 8;
-	moving_diagonally = 0;
-	name = "West Bump";
-	pixel_x = -24;
 	pixel_y = 0
 	},
 /turf/open/floor/plasteel/darkred,
@@ -1414,16 +1129,6 @@
 	dir = 10
 	},
 /area/ship_salvage/component/c_2_3)
-"dT" = (
-/obj/machinery/ftl_shieldgen{
-	icon_state = "shield_gen_off";
-	on = 0;
-	plasma_charge = 0;
-	power_charge = 0
-	},
-/obj/machinery/atmospherics/pipe/simple,
-/turf/open/floor/engine,
-/area/ship_salvage/component/c_2_3)
 "dU" = (
 /turf/open/floor/engine,
 /turf/open/floor/plasteel/warningline{
@@ -1441,16 +1146,6 @@
 	tag = "icon-warningline (SOUTHWEST)";
 	dir = 10
 	},
-/area/ship_salvage/component/c_4_3)
-"dX" = (
-/obj/machinery/atmospherics/pipe/simple,
-/obj/machinery/ftl_shieldgen{
-	icon_state = "shield_gen_off";
-	on = 0;
-	plasma_charge = 0;
-	power_charge = 0
-	},
-/turf/open/floor/engine,
 /area/ship_salvage/component/c_4_3)
 "dY" = (
 /turf/open/floor/engine,
@@ -1481,34 +1176,6 @@
 	dir = 4;
 	pixel_x = 0
 	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_3_3)
-"ed" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/machinery/porta_turret_cover,
-/obj/machinery/porta_turret/ai,
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8";
-	tag = ""
-	},
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_3_3)
 "ee" = (
@@ -1533,23 +1200,6 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_5_3)
-"eh" = (
-/obj/machinery/shower{
-	dir = 8
-	},
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/obj/machinery/power/apc/priority{
-	dir = 4;
-	moving_diagonally = 0;
-	name = "East Bump";
-	pixel_x = 24;
-	pixel_y = 0
-	},
-/turf/open/floor/plasteel/showroomfloor,
 /area/ship_salvage/component/c_5_3)
 "ei" = (
 /obj/structure/tank_dispenser/oxygen,
@@ -1585,39 +1235,6 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_1_3)
-"eo" = (
-<<<<<<< HEAD
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/turf/closed/wall/r_wall,
-/area/ship_salvage/component/c_3_5)
-=======
-/obj/structure/table,
-/obj/machinery/power/apc/priority{
-	name = "South Bump";
-	pixel_x = 0;
-	pixel_y = -24
-	},
-/turf/open/floor/plasteel/cafeteria,
-/area/ship_salvage/component/c_2_4)
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-"ep" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/machinery/porta_turret/ai,
-/obj/machinery/porta_turret_cover,
-/turf/open/floor/plasteel/vault{
-	dir = 5
-	},
-/area/ship_salvage/component/c_3_4)
 "eq" = (
 /turf/open/floor/plasteel,
 /area/ship_salvage/component/c_2_4)
@@ -1634,17 +1251,6 @@
 "et" = (
 /turf/open/floor/plasteel/darkred,
 /area/ship_salvage/component/c_3_4)
-"eu" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/machinery/porta_turret_cover,
-/obj/machinery/porta_turret/ai,
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_3_4)
 "ev" = (
 /obj/machinery/light{
 	dir = 1
@@ -1654,7 +1260,7 @@
 	layer = 2.9
 	},
 /turf/open/floor/plasteel,
-/area/ship_salvage/component/c_4_4)
+/area/ship_salvage/component/c_3_4)
 "ew" = (
 /obj/structure/window/reinforced{
 	dir = 8;
@@ -1662,23 +1268,11 @@
 	},
 /obj/structure/window/reinforced,
 /turf/open/floor/plasteel,
-/area/ship_salvage/component/c_4_4)
+/area/ship_salvage/component/c_3_4)
 "ex" = (
-<<<<<<< HEAD
-/obj/machinery/light/built{
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/ship_salvage/component/c_1_5)
-=======
-/obj/machinery/power/apc/priority{
-	name = "South Bump";
-	pixel_x = 0;
-	pixel_y = -24
-	},
-/turf/open/floor/plasteel/brown,
-/area/ship_salvage/component/c_4_4)
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+/obj/effect/spawner/lootdrop/salvage_spawner,
+/turf/open/floor/plasteel/delivery,
+/area/ship_salvage/component/c_3_4)
 "ey" = (
 /obj/effect/spawner/lootdrop/salvage_spawner,
 /turf/open/floor/plasteel/delivery,
@@ -1795,20 +1389,6 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel/darkred,
 /area/ship_salvage/component/c_3_4)
-"eR" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_1_3)
 "eS" = (
 /obj/structure/cable{
 	crit_fail = 0;
@@ -1822,34 +1402,6 @@
 /mob/living/simple_animal/hostile/syndicate/civilian,
 /turf/open/floor/plasteel/darkred,
 /area/ship_salvage/component/c_4_4)
-"eU" = (
-<<<<<<< HEAD
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-=======
-/obj/machinery/power/apc/priority{
-	dir = 8;
-	moving_diagonally = 0;
-	name = "West Bump";
-	pixel_x = -24;
-	pixel_y = 0
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_2_3)
 "eV" = (
 /turf/open/floor/plasteel/brown,
 /area/ship_salvage/component/c_4_4)
@@ -1909,11 +1461,6 @@
 	},
 /turf/open/floor/plasteel/redblue,
 /area/ship_salvage/component/c_1_4)
-"fc" = (
-/obj/machinery/porta_turret_cover,
-/obj/machinery/porta_turret/ai,
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_2_4)
 "fd" = (
 /turf/closed/wall/r_wall,
 /area/ship_salvage/component/c_3_4)
@@ -1929,11 +1476,6 @@
 	dir = 5
 	},
 /area/ship_salvage/component/c_3_4)
-"ff" = (
-/obj/machinery/porta_turret_cover,
-/obj/machinery/porta_turret/ai,
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_4_4)
 "fg" = (
 /turf/closed/wall/r_wall,
 /area/ship_salvage/component/c_5_4)
@@ -2045,24 +1587,6 @@
 	dir = 5
 	},
 /area/ship_salvage/component/c_3_4)
-"fw" = (
-/obj/structure/table/wood,
-/obj/item/weapon/paper_bin,
-/turf/open/floor/wood,
-/area/ship_salvage/component/c_5_4)
-"fx" = (
-/obj/structure/table/wood,
-/obj/item/device/flashlight/pen,
-/turf/open/floor/wood,
-/area/ship_salvage/component/c_5_4)
-"fy" = (
-/obj/structure/frame/computer,
-/turf/open/floor/wood,
-/area/ship_salvage/component/c_5_4)
-"fz" = (
-/obj/structure/table/wood,
-/turf/open/floor/wood,
-/area/ship_salvage/component/c_5_4)
 "fA" = (
 /obj/structure/table,
 /obj/item/weapon/reagent_containers/food/condiment/soysauce,
@@ -2135,7 +1659,6 @@
 /area/ship_salvage/component/c_3_4)
 "fL" = (
 /obj/machinery/door/window/eastright,
-/obj/machinery/light/built,
 /turf/open/floor/plasteel/brown{
 	tag = "icon-brown (SOUTHEAST)";
 	icon_state = "brown";
@@ -2143,11 +1666,9 @@
 	},
 /area/ship_salvage/component/c_4_4)
 "fM" = (
-/obj/machinery/light/built{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/ship_salvage/component/c_2_5)
+/obj/machinery/light,
+/turf/closed/wall/r_wall,
+/area/ship_salvage/component/c_5_4)
 "fN" = (
 /obj/machinery/door/window/westright,
 /turf/open/floor/wood,
@@ -2156,12 +1677,6 @@
 /obj/machinery/door/airlock/engineering{
 	name = "Engine Room";
 	req_access_txt = "36"
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/darkred,
 /area/ship_salvage/hull)
@@ -2179,12 +1694,6 @@
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/darkred,
 /area/ship_salvage/hull)
@@ -2204,59 +1713,11 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/open/floor/plasteel/darkred,
 /area/ship_salvage/hull)
-"fR" = (
-/obj/structure/cable{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-<<<<<<< HEAD
-=======
-/obj/machinery/power/apc/priority{
-	dir = 4;
-	moving_diagonally = 0;
-	name = "East Bump";
-	pixel_x = 24;
-	pixel_y = 0
-	},
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_4_3)
 "fS" = (
 /obj/machinery/atmospherics/components/unary/portables_connector,
 /obj/machinery/portable_atmospherics/canister,
-/turf/open/floor/plating,
-/area/ship_salvage/component/c_1_5)
-"fT" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/cable{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-<<<<<<< HEAD
-=======
-/obj/machinery/power/apc/priority{
-	dir = 1;
-	name = "North Bump";
-	pixel_x = 0;
-	pixel_y = 24
-	},
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
 /turf/open/floor/plating,
 /area/ship_salvage/component/c_1_5)
 "fU" = (
@@ -2275,25 +1736,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship_salvage/component/c_2_5)
-"fW" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-<<<<<<< HEAD
-=======
-/obj/machinery/power/apc/priority{
-	dir = 1;
-	name = "North Bump";
-	pixel_x = 0;
-	pixel_y = 24
-	},
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-/turf/open/floor/plating,
-/area/ship_salvage/component/c_2_5)
 "fX" = (
 /turf/open/floor/plating,
 /area/ship_salvage/component/c_2_5)
@@ -2301,22 +1743,6 @@
 /turf/closed/wall/r_wall,
 /area/ship_salvage/component/c_3_5)
 "fZ" = (
-/turf/open/floor/plating,
-/area/ship_salvage/component/c_4_5)
-"ga" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/cable{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/machinery/power/apc/priority{
-	dir = 1;
-	name = "North Bump";
-	pixel_x = 0;
-	pixel_y = 24
-	},
 /turf/open/floor/plating,
 /area/ship_salvage/component/c_4_5)
 "gb" = (
@@ -2333,22 +1759,6 @@
 /turf/open/floor/plating,
 /area/ship_salvage/component/c_4_5)
 "gc" = (
-/turf/open/floor/plating,
-/area/ship_salvage/component/c_5_5)
-"gd" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/obj/machinery/power/apc/priority{
-	dir = 1;
-	name = "North Bump";
-	pixel_x = 0;
-	pixel_y = 24
-	},
 /turf/open/floor/plating,
 /area/ship_salvage/component/c_5_5)
 "ge" = (
@@ -2379,18 +1789,6 @@
 "gi" = (
 /obj/machinery/atmospherics/components/unary/portables_connector,
 /obj/machinery/portable_atmospherics/canister/toxins,
-/turf/open/floor/plating,
-/area/ship_salvage/component/c_3_5)
-"gj" = (
-/obj/structure/cable{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/machinery/power/port_gen/pacman{
-	active = 1;
-	anchored = 1;
-	sheet_left = 50
-	},
 /turf/open/floor/plating,
 /area/ship_salvage/component/c_3_5)
 "gk" = (
@@ -2449,26 +1847,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship_salvage/component/c_3_5)
-"gt" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8";
-	tag = ""
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_5_3)
 "gu" = (
 /obj/item/pipe{
 	tag = "icon-simple (NORTH)";
@@ -2505,19 +1883,6 @@
 	},
 /turf/open/floor/plasteel/darkred,
 /area/ship_salvage/component/c_5_3)
-"gy" = (
-<<<<<<< HEAD
-/obj/machinery/light/built{
-	dir = 4
-=======
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-	},
-/turf/open/floor/plating,
-/area/ship_salvage/component/c_5_5)
 "gz" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -2583,11 +1948,8 @@
 /turf/open/floor/plating,
 /area/ship_salvage/component/c_1_5)
 "gF" = (
+/obj/machinery/power/smes/engineering,
 /obj/structure/cable,
-/obj/machinery/power/smes/engineering{
-	capacity = 200000;
-	charge = 100000
-	},
 /turf/open/floor/plating,
 /area/ship_salvage/component/c_3_5)
 "gG" = (
@@ -2599,81 +1961,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship_salvage/component/c_5_5)
-"gH" = (
-<<<<<<< HEAD
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/machinery/power/port_gen/pacman{
-	active = 1;
-	anchored = 1;
-	sheet_left = 50
-	},
-/turf/open/floor/plating,
-/area/ship_salvage/component/c_3_5)
-"gI" = (
-=======
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-<<<<<<< HEAD
-/obj/machinery/power/apc/priority{
-	dir = 1;
-	name = "North Bump";
-	pixel_x = 0;
-	pixel_y = 24
-=======
-/obj/structure/cable{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/machinery/power/port_gen/pacman{
-	active = 1;
-	anchored = 1;
-	sheet_left = 50
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-	},
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/ship_salvage/component/c_3_5)
-"gI" = (
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/closed/wall/r_wall,
-/area/ship_salvage/hull)
-"gJ" = (
-/obj/structure/cable{
-<<<<<<< HEAD
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-=======
-	d2 = 8;
-	icon_state = "0-8"
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plating,
-/area/ship_salvage/component/c_3_5)
 "gK" = (
 /obj/structure/cable{
 	crit_fail = 0;
@@ -2687,42 +1974,12 @@
 /obj/effect/spawner/lootdrop/salvage_spawner,
 /turf/open/floor/plating,
 /area/ship_salvage/component/c_5_5)
-"gM" = (
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/power/port_gen/pacman{
-	active = 1;
-	anchored = 1;
-	sheet_left = 50
-	},
-/turf/open/floor/plating,
-/area/ship_salvage/component/c_3_5)
 "gN" = (
 /obj/effect/spawner/lootdrop/salvage_spawner,
 /turf/open/floor/plating,
 /area/ship_salvage/component/c_2_5)
 "gO" = (
 /obj/machinery/ftl_drive,
-/turf/open/floor/plating,
-/area/ship_salvage/component/c_3_5)
-"gP" = (
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/obj/machinery/power/port_gen/pacman{
-	active = 1;
-	anchored = 1;
-	sheet_left = 50
-	},
 /turf/open/floor/plating,
 /area/ship_salvage/component/c_3_5)
 "gQ" = (
@@ -2897,22 +2154,6 @@
 /obj/item/weapon/weldingtool,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_2_1)
-"hq" = (
-/obj/structure/window/reinforced{
-	dir = 8;
-	layer = 2.9
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_4_1)
-"hr" = (
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_4_1)
 "hs" = (
 /obj/structure/window/reinforced{
 	dir = 8;
@@ -2924,39 +2165,13 @@
 /obj/machinery/light{
 	dir = 1
 	},
-<<<<<<< HEAD
-=======
-/obj/machinery/power/apc/priority{
-	dir = 1;
-	name = "North Bump";
-	pixel_x = 0;
-	pixel_y = 24
-	},
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
 /turf/open/floor/pod,
 /area/ship_salvage/component/c_2_2)
 "hu" = (
+/turf/open/floor/pod,
 /obj/machinery/light{
 	dir = 1
 	},
-<<<<<<< HEAD
-=======
-/obj/machinery/power/apc/priority{
-	dir = 1;
-	name = "North Bump";
-	pixel_x = 0;
-	pixel_y = 24
-	},
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-/obj/structure/cable{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/turf/open/floor/pod,
 /turf/open/floor/plasteel/warningline{
 	tag = "icon-warningline (EAST)";
 	dir = 4
@@ -3087,12 +2302,6 @@
 	dir = 8;
 	layer = 2.9
 	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_3_3)
 "hM" = (
@@ -3151,11 +2360,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship_salvage/component/c_4_4)
-"hS" = (
-/obj/machinery/porta_turret/syndicate,
-/obj/machinery/porta_turret_cover,
-/turf/open/floor/plasteel,
-/area/ship_salvage/component/c_5_3)
 "hT" = (
 /obj/effect/spawner/lootdrop/salvage_spawner,
 /obj/structure/window/reinforced{
@@ -3394,26 +2598,6 @@
 /obj/structure/stacklifter,
 /turf/open/floor/plasteel,
 /area/ship_salvage/component/c_4_4)
-"iG" = (
-/obj/machinery/computer,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/machinery/light/built{
-	dir = 1
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_3_1)
-"iH" = (
-/obj/structure/cable{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_2_1)
 "iI" = (
 /obj/structure/window/reinforced{
 	dir = 4;
@@ -3427,18 +2611,186 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_2_1)
-"jw" = (
+"jJ" = (
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/machinery/power/port_gen/pacman{
+	active = 1;
+	anchored = 1;
+	sheet_left = 100
+	},
+/turf/open/floor/plating,
+/area/ship_salvage/component/c_3_5)
+"kt" = (
 /obj/structure/cable{
 	crit_fail = 0;
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/open/floor/plasteel/vault{
-	dir = 5
+/turf/closed/wall/r_wall,
+/area/ship_salvage/component/c_5_1)
+"kN" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 0
 	},
-/area/ship_salvage/component/c_3_4)
-"jv" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/open/floor/plasteel,
+/area/ship_salvage/hull)
+"kQ" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/open/floor/plasteel,
+/area/ship_salvage/hull)
+"kU" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/open/floor/plasteel,
+/area/ship_salvage/hull)
+"kV" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8";
+	tag = ""
+	},
+/turf/open/floor/plasteel/darkred,
+/area/ship_salvage/hull)
+"kX" = (
+/obj/machinery/porta_turret/ai{
+	dir = 8
+	},
+/turf/open/floor/plasteel/black,
+/area/ship_salvage/component/c_2_4)
+"ld" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8";
+	tag = ""
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel,
+/area/ship_salvage/hull)
+"mz" = (
+/obj/machinery/atmospherics/pipe/simple{
+	tag = "icon-intact (EAST)";
+	icon_state = "intact";
+	dir = 4
+	},
+/turf/open/floor/plasteel/darkred,
+/area/ship_salvage/component/c_1_2)
+"pM" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 9
+	},
+/turf/open/floor/plasteel/darkred,
+/area/ship_salvage/component/c_5_2)
+"qf" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/open/floor/plasteel/darkred,
+/area/ship_salvage/hull)
+"qn" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating,
+/area/ship_salvage/component/c_4_5)
+"qC" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable,
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8";
+	tag = ""
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/open/floor/plasteel,
+/area/ship_salvage/hull)
+"rg" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 0
+	},
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
@@ -3450,385 +2802,688 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/open/floor/plasteel/vault{
-	dir = 5
+/turf/open/floor/plasteel,
+/area/ship_salvage/hull)
+"rF" = (
+/obj/machinery/porta_turret/ai{
+	dir = 8
 	},
-/area/ship_salvage/component/c_3_4)
-"ju" = (
+/turf/open/floor/plasteel/black,
+/area/ship_salvage/component/c_4_4)
+"sD" = (
+/obj/structure/window/reinforced{
+	dir = 8;
+	layer = 2.9
+	},
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2";
 	pixel_y = 0
 	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/open/floor/plasteel/black,
+/area/ship_salvage/component/c_4_1)
+"sL" = (
+/obj/machinery/porta_turret_cover,
+/obj/machinery/porta_turret/ai{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/ship_salvage/component/c_5_3)
+"sS" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/open/floor/plasteel/black,
+/area/ship_salvage/hull)
+"ts" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel,
+/area/ship_salvage/hull)
+"uf" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 9
+	},
+/turf/open/floor/plasteel/darkred,
+/area/ship_salvage/component/c_1_2)
+"ut" = (
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc/priority{
+	auto_name = 1;
+	dir = 1;
+	name = "north bump";
+	pixel_y = 24
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/ship_salvage/component/c_3_5)
+"uw" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating,
+/area/ship_salvage/component/c_5_5)
+"vy" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8";
+	tag = ""
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/closed/wall/r_wall,
+/area/ship_salvage/hull)
+"wL" = (
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/machinery/power/port_gen/pacman{
+	active = 1;
+	anchored = 1;
+	sheet_left = 100
+	},
+/turf/open/floor/plating,
+/area/ship_salvage/component/c_3_5)
+"xa" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/closed/wall/r_wall,
+/area/ship_salvage/component/c_3_4)
+"xT" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/open/floor/plasteel/darkred,
+/area/ship_salvage/component/c_5_3)
+"yr" = (
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/black,
+/area/ship_salvage/component/c_2_1)
+"yZ" = (
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/darkred,
+/area/ship_salvage/component/c_5_4)
+"Al" = (
+/obj/machinery/atmospherics/pipe/simple{
+	tag = "icon-intact (SOUTHEAST)";
+	icon_state = "intact";
+	dir = 6
+	},
+/turf/open/floor/plasteel/black,
+/area/ship_salvage/component/c_1_2)
+"As" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/open/space,
+/area/ship_salvage/component/c_5_1)
+"Bq" = (
+/obj/structure/table/wood,
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/open/floor/wood,
 /area/ship_salvage/component/c_5_4)
-"jt" = (
+"BN" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8";
+	tag = ""
+	},
+/turf/open/floor/plasteel/black,
+/area/ship_salvage/component/c_1_2)
+"Cz" = (
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/black,
+/area/ship_salvage/component/c_1_2)
+"CJ" = (
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/black,
+/area/ship_salvage/component/c_4_1)
+"Dd" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/open/floor/plasteel,
+/area/ship_salvage/hull)
+"DY" = (
+/obj/machinery/ftl_shieldgen{
+	icon_state = "shield_gen_off";
+	on = 0
+	},
+/turf/open/floor/engine,
+/area/ship_salvage/component/c_1_2)
+"Eg" = (
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/black,
+/area/ship_salvage/component/c_1_4)
+"Fw" = (
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/darkred,
+/area/ship_salvage/component/c_1_4)
+"Gv" = (
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = 0
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8";
+	tag = ""
+	},
+/turf/open/floor/plasteel/black,
+/area/ship_salvage/component/c_2_1)
+"GF" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/open/floor/plasteel,
+/area/ship_salvage/hull)
+"GJ" = (
+/obj/machinery/ftl_shieldgen{
+	icon_state = "shield_gen_off";
+	on = 0
+	},
+/obj/machinery/atmospherics/pipe/simple,
+/turf/open/floor/engine,
+/area/ship_salvage/component/c_2_3)
+"HJ" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/machinery/porta_turret/ai{
+	dir = 8
+	},
+/turf/open/floor/plasteel/black,
+/area/ship_salvage/component/c_3_3)
+"HN" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/open/floor/plasteel/black,
+/area/ship_salvage/component/c_5_2)
+"HX" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable,
+/turf/open/floor/plasteel,
+/area/ship_salvage/hull)
+"JB" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/open/floor/plasteel/darkred,
+/area/ship_salvage/component/c_5_4)
+"KA" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/open/floor/plasteel,
+/area/ship_salvage/hull)
+"KU" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/black,
+/area/ship_salvage/component/c_4_1)
+"Ln" = (
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/power/port_gen/pacman{
+	active = 1;
+	anchored = 1;
+	sheet_left = 100
+	},
+/turf/open/floor/plating,
+/area/ship_salvage/component/c_3_5)
+"LK" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel,
+/area/ship_salvage/hull)
+"LY" = (
+/obj/structure/table/wood,
+/obj/item/weapon/paper_bin,
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/open/floor/wood,
+/area/ship_salvage/component/c_5_4)
+"MP" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 0
+	},
+/turf/open/floor/plasteel,
+/area/ship_salvage/hull)
+"Nb" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/machinery/porta_turret/ai{
+	dir = 8
+	},
+/turf/open/floor/plasteel/vault{
+	dir = 5
+	},
+/area/ship_salvage/component/c_3_4)
+"Nn" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/open/floor/plasteel/darkred,
+/area/ship_salvage/hull)
+"Ow" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/machinery/porta_turret/ai{
+	dir = 8
+	},
+/turf/open/floor/plasteel/black,
+/area/ship_salvage/component/c_3_4)
+"OC" = (
+/obj/machinery/atmospherics/pipe/simple{
+	tag = "icon-intact (NORTHEAST)";
+	icon_state = "intact";
+	dir = 5
+	},
+/turf/open/floor/plasteel/darkred,
+/area/ship_salvage/component/c_5_2)
+"OG" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
 /obj/structure/cable{
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/turf/open/floor/wood,
-/area/ship_salvage/component/c_5_4)
-"js" = (
-/obj/machinery/light/built{
-	dir = 4
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_5_4)
-"jr" = (
-/obj/machinery/light/built{
-	dir = 1
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_5_3)
-"jq" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_4_3)
-"jp" = (
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_4_3)
-"jo" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_3_3)
-"jn" = (
-/obj/structure/window/reinforced{
-	dir = 8;
-	layer = 2.9
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_3_3)
-"jm" = (
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_3_3)
-"jl" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_2_3)
-"jk" = (
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_2_3)
-"jj" = (
-/obj/machinery/porta_turret/ai,
-/obj/machinery/porta_turret_cover,
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_1_3)
-"ji" = (
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_5_2)
-"jh" = (
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_5_2)
-"jg" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 9
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_5_2)
-"jf" = (
-/obj/machinery/atmospherics/pipe/simple{
-	tag = "icon-intact (EAST)";
-	icon_state = "intact";
-	dir = 4
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_5_2)
-"je" = (
-/obj/machinery/atmospherics/pipe/simple{
-	tag = "icon-intact (NORTHEAST)";
-	icon_state = "intact";
-	dir = 5
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_5_2)
-"jd" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_5_2)
-"jc" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8";
-	tag = ""
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_1_2)
-"jb" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 9
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_1_2)
-"ja" = (
-/obj/machinery/atmospherics/pipe/simple{
-	tag = "icon-intact (EAST)";
-	icon_state = "intact";
-	dir = 4
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_1_2)
-"iZ" = (
-/obj/machinery/atmospherics/pipe/simple{
-	tag = "icon-intact (NORTHEAST)";
-	icon_state = "intact";
-	dir = 5
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_1_2)
-"iY" = (
-/obj/structure/window/reinforced{
-	dir = 8;
-	layer = 2.9
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8";
-	tag = ""
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_5_2)
-"iX" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_5_2)
-"iW" = (
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_4_2)
-"iV" = (
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_2_2)
-"iU" = (
-/obj/structure/window/reinforced{
-	dir = 8;
-	layer = 2.9
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_1_2)
-"iT" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_1_2)
-"iS" = (
-/obj/machinery/light/built{
-	dir = 4
-	},
-/mob/living/simple_animal/hostile/carp,
-/turf/open/floor/plasteel/elevatorshaft,
-/area/ship_salvage/component/c_4_1)
-"iR" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/light/built{
-	dir = 4
-	},
-/turf/open/space,
-/area/template_noop)
-"iQ" = (
-/obj/machinery/light/built{
-	dir = 4
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_3_1)
-"iP" = (
-/obj/machinery/light/built{
+/obj/machinery/porta_turret/ai{
 	dir = 8
 	},
-<<<<<<< HEAD
 /turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_3_1)
-"iO" = (
-/obj/structure/lattice/catwalk,
+/area/ship_salvage/component/c_3_2)
+"OK" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
 /obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8";
-	tag = ""
+	d2 = 4;
+	icon_state = "0-4"
 	},
-/turf/open/space,
-/area/ship_salvage/component/c_5_1)
-"iN" = (
-/obj/structure/lattice/catwalk,
 /obj/structure/cable{
 	crit_fail = 0;
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
-=======
-/area/ship_salvage/component/c_4_4)
-"iF" = (
-/obj/structure/stacklifter,
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/open/floor/plasteel/black,
+/area/ship_salvage/hull)
+"OS" = (
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/open/floor/wood,
+/area/ship_salvage/component/c_5_4)
+"PF" = (
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/closed/wall/r_wall,
+/area/ship_salvage/component/c_5_4)
+"PK" = (
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/closed/wall/r_wall,
+/area/ship_salvage/component/c_1_1)
+"PL" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
 /turf/open/floor/plasteel,
-/area/ship_salvage/component/c_4_4)
-"iG" = (
+/area/ship_salvage/hull)
+"PV" = (
+/obj/structure/table/wood,
+/obj/item/device/flashlight/pen,
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/open/floor/wood,
+/area/ship_salvage/component/c_5_4)
+"PZ" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating,
+/area/ship_salvage/component/c_1_5)
+"Qs" = (
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/black,
+/area/ship_salvage/component/c_5_2)
+"Rj" = (
+/obj/machinery/porta_turret_cover,
+/obj/machinery/porta_turret/ai{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/ship_salvage/component/c_1_3)
+"Rn" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel,
+/area/ship_salvage/hull)
+"Sg" = (
+/obj/machinery/ftl_shieldgen{
+	icon_state = "shield_gen_off";
+	on = 0
+	},
+/turf/open/floor/engine,
+/area/ship_salvage/component/c_5_2)
+"Sr" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/machinery/porta_turret/ai{
+	dir = 8
+	},
+/turf/open/floor/plasteel/darkred,
+/area/ship_salvage/component/c_1_3)
+"SI" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 0
+	},
+/turf/open/floor/plasteel,
+/area/ship_salvage/hull)
+"Ti" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/closed/wall/r_wall,
+/area/ship_salvage/component/c_3_5)
+"TI" = (
 /obj/machinery/computer,
 /obj/structure/cable{
 	d1 = 1;
@@ -3838,198 +3493,119 @@
 	},
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_3_1)
-"iH" = (
+"Uc" = (
+/obj/structure/lattice/catwalk,
 /obj/structure/cable{
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/machinery/power/apc/priority{
-	dir = 8;
-	moving_diagonally = 0;
-	name = "West Bump";
-	pixel_x = -24;
-	pixel_y = 0
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_2_1)
-"iI" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-	},
 /turf/open/space,
-/area/ship_salvage/component/c_5_1)
-"iM" = (
-/obj/structure/lattice/catwalk,
+/area/ship_salvage/component/c_1_1)
+"Us" = (
+/obj/machinery/atmospherics/pipe/simple{
+	tag = "icon-intact (NORTHEAST)";
+	icon_state = "intact";
+	dir = 5
+	},
+/turf/open/floor/plasteel/darkred,
+/area/ship_salvage/component/c_1_2)
+"UZ" = (
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_x = 0;
+	tag = ""
+	},
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/ship_salvage/component/c_3_5)
+"Vh" = (
+/obj/machinery/shower{
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/ship_salvage/component/c_5_3)
+"VF" = (
+/obj/machinery/ftl_shieldgen{
+	icon_state = "shield_gen_off";
+	on = 0
+	},
+/obj/machinery/atmospherics/pipe/simple,
+/turf/open/floor/engine,
+/area/ship_salvage/component/c_4_3)
+"VZ" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	crit_fail = 0;
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/open/floor/plasteel,
+/area/ship_salvage/hull)
+"Wd" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /obj/structure/cable{
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8";
 	tag = ""
 	},
-<<<<<<< HEAD
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/obj/machinery/light/built,
-/turf/open/space,
+/turf/closed/wall/r_wall,
 /area/ship_salvage/hull)
-"iL" = (
-/obj/structure/lattice/catwalk,
-=======
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_2_1)
-"jn" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
+"Wy" = (
+/obj/structure/frame/computer,
 /obj/structure/cable{
 	crit_fail = 0;
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_4_3)
-"jm" = (
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_4_3)
-"jl" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/turf/open/floor/wood,
+/area/ship_salvage/component/c_5_4)
+"WU" = (
+/obj/machinery/atmospherics/pipe/simple{
+	tag = "icon-intact (EAST)";
+	icon_state = "intact";
+	dir = 4
 	},
 /turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_3_3)
-"jk" = (
-/obj/structure/window/reinforced{
-	dir = 8;
-	layer = 2.9
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_3_3)
-"jj" = (
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_3_3)
-"ji" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-<<<<<<< HEAD
-/turf/open/space,
-/area/ship_salvage/hull)
-"iK" = (
-/obj/structure/lattice/catwalk,
-=======
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_2_3)
-"jh" = (
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_2_3)
-"jg" = (
-/obj/machinery/porta_turret/ai,
-/obj/machinery/porta_turret_cover,
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_1_3)
-"jf" = (
-/obj/machinery/power/apc/priority{
-	dir = 1;
-	name = "North Bump";
-	pixel_x = 0;
-	pixel_y = 24
+/area/ship_salvage/component/c_5_2)
+"Xr" = (
+/obj/machinery/light{
+	dir = 1
 	},
 /obj/structure/cable{
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_5_2)
-"je" = (
+/turf/open/floor/plating,
+/area/ship_salvage/component/c_2_5)
+"Xu" = (
 /obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_5_2)
-"jd" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 9
-	},
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/space,
-/area/ship_salvage/component/c_1_1)
-"iJ" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/cable{
-<<<<<<< HEAD
-	d1 = 2;
 	d2 = 4;
-	icon_state = "2-4"
-	},
-=======
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_5_2)
-"jc" = (
-/obj/machinery/atmospherics/pipe/simple{
-	tag = "icon-intact (EAST)";
-	icon_state = "intact";
-	dir = 4
+	icon_state = "0-4"
 	},
 /obj/structure/cable{
 	crit_fail = 0;
@@ -4037,246 +3613,21 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_5_2)
-"jb" = (
+/obj/machinery/power/port_gen/pacman{
+	active = 1;
+	anchored = 1;
+	sheet_left = 100
+	},
+/turf/open/floor/plating,
+/area/ship_salvage/component/c_3_5)
+"YZ" = (
 /obj/machinery/atmospherics/pipe/simple{
-	tag = "icon-intact (NORTHEAST)";
+	tag = "icon-intact (SOUTHWEST)";
 	icon_state = "intact";
-	dir = 5
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_5_2)
-"ja" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_5_2)
-"iZ" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8";
-	tag = ""
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_1_2)
-"iY" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 9
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_1_2)
-"iX" = (
-/obj/machinery/atmospherics/pipe/simple{
-	tag = "icon-intact (EAST)";
-	icon_state = "intact";
-	dir = 4
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_1_2)
-"iW" = (
-/obj/machinery/atmospherics/pipe/simple{
-	tag = "icon-intact (NORTHEAST)";
-	icon_state = "intact";
-	dir = 5
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_1_2)
-"iV" = (
-/obj/structure/window/reinforced{
-	dir = 8;
-	layer = 2.9
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8";
-	tag = ""
+	dir = 10
 	},
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_5_2)
-"iU" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_5_2)
-"iT" = (
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_4_2)
-"iS" = (
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_2_2)
-"iR" = (
-/obj/structure/window/reinforced{
-	dir = 8;
-	layer = 2.9
-	},
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/darkred,
-/area/ship_salvage/component/c_1_2)
-"iQ" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_1_2)
-"iP" = (
-/obj/machinery/power/apc/priority{
-	dir = 8;
-	moving_diagonally = 0;
-	name = "West Bump";
-	pixel_x = -24;
-	pixel_y = 0
-	},
-/turf/open/floor/plasteel/black,
-/area/ship_salvage/component/c_3_1)
-"iO" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8";
-	tag = ""
-	},
-/turf/open/space,
-/area/ship_salvage/component/c_5_1)
-"iN" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/space,
-/area/ship_salvage/component/c_5_1)
-"iM" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8";
-	tag = ""
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/turf/open/space,
-/area/ship_salvage/hull)
-"iL" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/space,
-/area/ship_salvage/hull)
-"iK" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/cable{
-	crit_fail = 0;
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/open/space,
-/area/ship_salvage/component/c_1_1)
-"iJ" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-/turf/open/space,
-/area/ship_salvage/component/c_1_1)
 
 (1,1,1) = {"
 aa
@@ -4530,7 +3881,7 @@ ai
 ai
 ai
 fU
-ex
+fU
 gQ
 ha
 aa
@@ -4569,13 +3920,13 @@ ai
 ai
 ai
 ai
-ah
-ah
-ah
-ai
-ah
-ah
-ah
+MP
+rg
+rg
+aX
+KA
+KA
+HX
 ai
 ai
 ai
@@ -4621,13 +3972,13 @@ ai
 ai
 ai
 ai
-ah
-ah
-ah
-ai
-ah
-ah
-ah
+MP
+Rn
+kN
+aX
+KA
+KA
+HX
 ai
 ai
 ai
@@ -4654,15 +4005,15 @@ aa
 aa
 ae
 ae
-iR
+ae
 ae
 ae
 ae
 ai
 ai
-cq
-cA
-cq
+qf
+sS
+qf
 ai
 db
 db
@@ -4674,18 +4025,14 @@ dP
 ei
 en
 hV
-eE
+Eg
 eE
 eW
 ir
 ir
 ir
 bs
-<<<<<<< HEAD
-bG
-=======
-gy
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+ai
 fS
 gf
 fU
@@ -4711,37 +4058,33 @@ ae
 ap
 ae
 ai
-ah
-ah
+kQ
+HX
 ai
 ai
 ai
-cq
-cA
-cq
+kV
+OK
+Nn
 ai
 dc
 dm
 dv
-<<<<<<< HEAD
-jj
-=======
-jg
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-dy
 db
 db
 db
 db
 db
-eF
+db
+db
+Fw
 eF
 eX
 ir
 fo
 fo
 fo
-eS
+ai
 fS
 gg
 gp
@@ -4767,13 +4110,13 @@ ap
 ae
 ai
 ai
-ah
-ah
+VZ
+HX
 ai
 ai
 ai
 cr
-cB
+Cz
 cr
 ai
 db
@@ -4786,14 +4129,14 @@ db
 db
 db
 db
-eF
+Fw
 eF
 eY
 ir
 fp
 fA
 fB
-eS
+ai
 fS
 gg
 fU
@@ -4819,13 +4162,13 @@ ae
 ai
 ai
 ai
-hj
+yr
 cB
 bu
 bv
 bP
 cr
-cB
+Cz
 cK
 ai
 db
@@ -4838,14 +4181,14 @@ db
 db
 hM
 hW
-eF
+Fw
 eF
 eZ
 ir
 fq
 fB
 fB
-eS
+ai
 fS
 gg
 fU
@@ -4866,22 +4209,18 @@ aa
 aa
 ae
 ae
-iR
+ae
 ai
 ai
 ai
 hp
-hj
+yr
 cB
 bv
 bv
-bQ
-<<<<<<< HEAD
-iZ
-=======
-iW
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-cB
+DY
+Us
+Cz
 cr
 ai
 db
@@ -4891,21 +4230,17 @@ dz
 dK
 dz
 dz
-<<<<<<< HEAD
-jj
-=======
-jg
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+db
 hN
 ej
-eF
+Fw
 eF
 fa
 ir
 fr
 fr
 fr
-eS
+ai
 fS
 gh
 gq
@@ -4931,17 +4266,13 @@ ai
 ai
 ho
 hj
-hj
+yr
 cB
 bw
 bv
 bR
-<<<<<<< HEAD
-ja
-=======
-iX
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-cB
+mz
+Cz
 cr
 ai
 dc
@@ -4952,17 +4283,17 @@ eO
 dA
 dA
 dv
+Rj
 ej
-ej
-eF
+Fw
 eF
 fb
 is
 iz
 iz
 fF
-eS
-fT
+ai
+PZ
 fU
 fU
 fU
@@ -4984,20 +4315,16 @@ ae
 ai
 ai
 ai
-iH
 hj
 hj
 hj
+yr
 bi
 cB
 cB
-bS
-<<<<<<< HEAD
-jb
-=======
-iY
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-cB
+Al
+uf
+Cz
 cr
 ai
 db
@@ -5010,7 +4337,7 @@ db
 dw
 db
 db
-eF
+Fw
 eF
 eF
 fi
@@ -5043,30 +4370,22 @@ hh
 iI
 as
 as
-as
-<<<<<<< HEAD
-iT
+Gv
 bh
-bh
-bT
-jc
-=======
-iQ
 bh
 bh
 bT
-iZ
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-cC
+cs
+BN
 cs
 aX
-dn
+Sr
 dn
 dx
 dn
 eP
 dR
-eR
+dn
 dx
 dn
 dn
@@ -5104,11 +4423,7 @@ hi
 hi
 hi
 aZ
-<<<<<<< HEAD
-iU
-=======
-iR
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+hs
 hs
 hs
 bU
@@ -5122,7 +4437,7 @@ ai
 ai
 ai
 ai
-eS
+ai
 ai
 hO
 hX
@@ -5134,7 +4449,7 @@ iA
 iA
 fG
 eS
-fW
+Xr
 fX
 fX
 fX
@@ -5160,11 +4475,7 @@ hk
 hk
 aJ
 hk
-<<<<<<< HEAD
-iV
-=======
-iS
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+ct
 ct
 ct
 bV
@@ -5178,7 +4489,7 @@ eb
 eb
 hJ
 eb
-eU
+eb
 ai
 er
 hY
@@ -5230,11 +4541,7 @@ cO
 dB
 dL
 dS
-<<<<<<< HEAD
-jk
-=======
-jh
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+eb
 ai
 er
 hY
@@ -5244,7 +4551,7 @@ er
 iu
 iB
 iB
-eo
+fI
 eS
 fX
 fX
@@ -5285,12 +4592,8 @@ do
 cP
 dC
 dC
-dT
-<<<<<<< HEAD
-jl
-=======
-ji
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+GJ
+eb
 ai
 es
 hZ
@@ -5342,11 +4645,7 @@ hC
 dD
 dL
 dU
-<<<<<<< HEAD
-jk
-=======
-jh
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+eb
 ai
 eq
 ia
@@ -5362,7 +4661,7 @@ fX
 fX
 gr
 fX
-fM
+gr
 gS
 hb
 aa
@@ -5372,8 +4671,8 @@ aa
 "}
 (21,1,1) = {"
 aa
-iJ
-af
+ab
+Uc
 ag
 ai
 ai
@@ -5398,17 +4697,13 @@ hE
 dE
 cQ
 cQ
-<<<<<<< HEAD
-jm
-=======
-jj
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+dp
 ai
 es
 ib
 eH
 eH
-fc
+kX
 fd
 fd
 fd
@@ -5428,11 +4723,11 @@ aa
 "}
 (22,1,1) = {"
 aa
-iK
-ag
+ab
+PK
 ai
 ai
-iP
+an
 an
 aC
 an
@@ -5454,11 +4749,7 @@ hF
 dE
 cQ
 cQ
-<<<<<<< HEAD
-jm
-=======
-jj
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+dp
 ai
 er
 hY
@@ -5484,10 +4775,10 @@ aa
 "}
 (23,1,1) = {"
 aa
-iL
-ah
-ah
-iP
+ac
+LK
+kU
+an
 an
 aw
 aD
@@ -5510,11 +4801,7 @@ hF
 dE
 cQ
 cQ
-<<<<<<< HEAD
-jm
-=======
-jj
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+dp
 ai
 er
 hY
@@ -5527,7 +4814,7 @@ fv
 ft
 gA
 fY
-gj
+jJ
 gk
 gk
 gk
@@ -5540,9 +4827,9 @@ aa
 "}
 (24,1,1) = {"
 aa
-iL
-ah
-ah
+ac
+PL
+PL
 an
 an
 aw
@@ -5579,7 +4866,7 @@ fv
 ft
 gA
 fY
-gH
+Xu
 gk
 gk
 gk
@@ -5592,9 +4879,9 @@ aa
 "}
 (25,1,1) = {"
 aa
-iL
-ah
-ah
+ac
+PL
+PL
 an
 an
 aw
@@ -5618,11 +4905,7 @@ cQ
 hz
 cQ
 cQ
-<<<<<<< HEAD
-jn
-=======
-jk
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+hz
 ek
 et
 et
@@ -5633,15 +4916,9 @@ fd
 fu
 fv
 fK
-<<<<<<< HEAD
-bO
-eo
-gI
-=======
-gA
-fY
-gK
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+xa
+Ti
+ut
 gk
 gk
 gk
@@ -5654,10 +4931,10 @@ aa
 "}
 (26,1,1) = {"
 aa
-iM
-aX
-aX
-iG
+ac
+Wd
+vy
+TI
 hg
 ax
 ax
@@ -5665,7 +4942,7 @@ ax
 ax
 ax
 aX
-be
+OG
 bo
 bo
 bo
@@ -5680,24 +4957,20 @@ bH
 cU
 cU
 cU
-ed
+HJ
 aX
-eu
+Ow
 eD
 eD
 eD
 fe
 fk
 gz
-<<<<<<< HEAD
-jv
-=======
-bG
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-ep
+gz
+Nb
 gD
 gF
-gJ
+UZ
 gk
 gk
 gO
@@ -5710,9 +4983,9 @@ aa
 "}
 (27,1,1) = {"
 aa
-iL
-ah
-ah
+ac
+GF
+GF
 an
 an
 aw
@@ -5736,11 +5009,7 @@ cQ
 hA
 cQ
 cQ
-<<<<<<< HEAD
-jo
-=======
-jl
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+hA
 ek
 et
 et
@@ -5749,11 +5018,7 @@ eQ
 fd
 fd
 fu
-<<<<<<< HEAD
-jw
-=======
-bO
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+fv
 fK
 gA
 fY
@@ -5770,9 +5035,9 @@ aa
 "}
 (28,1,1) = {"
 aa
-iL
-ah
-ah
+ac
+GF
+GF
 an
 an
 aw
@@ -5784,7 +5049,7 @@ ai
 bc
 bd
 bz
-bJ
+bn
 ce
 bd
 bn
@@ -5805,15 +5070,11 @@ et
 fd
 fd
 ft
-<<<<<<< HEAD
-jw
-=======
-bO
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+fv
 ft
 gA
 fY
-gM
+Ln
 gk
 gk
 gk
@@ -5826,9 +5087,9 @@ aa
 "}
 (29,1,1) = {"
 aa
-iL
-ah
-ah
+ac
+ts
+Dd
 an
 an
 aw
@@ -5840,7 +5101,7 @@ ai
 bb
 bd
 bz
-bK
+bn
 cf
 bd
 bn
@@ -5852,28 +5113,20 @@ hF
 dE
 cQ
 cQ
-<<<<<<< HEAD
-jm
-=======
-jj
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+dp
 ai
-ey
-ey
+ex
+ex
 et
 et
 fd
 fd
 ft
-<<<<<<< HEAD
-bp
-=======
-dd
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+fv
 ft
 gA
 fY
-gP
+wL
 gk
 gk
 gk
@@ -5886,11 +5139,11 @@ aa
 "}
 (30,1,1) = {"
 aa
-iN
-aj
+ad
+kt
 ai
 ai
-iQ
+an
 an
 aC
 an
@@ -5912,14 +5165,10 @@ hF
 dE
 cQ
 cQ
-<<<<<<< HEAD
-jm
-=======
-jj
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+dp
 ai
-ey
-ey
+ex
+ex
 et
 et
 fd
@@ -5942,8 +5191,8 @@ aa
 "}
 (31,1,1) = {"
 aa
-iO
-ak
+ad
+As
 aj
 ai
 ai
@@ -5968,17 +5217,13 @@ hG
 dE
 cQ
 dV
-<<<<<<< HEAD
-jm
-=======
-jj
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+dp
 ai
 hQ
 id
 eJ
 eJ
-ff
+rF
 fd
 fd
 fd
@@ -6024,11 +5269,7 @@ hD
 dF
 dM
 dW
-<<<<<<< HEAD
-jp
-=======
-jm
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+ee
 ai
 eA
 ie
@@ -6079,12 +5320,8 @@ cY
 cY
 dG
 dG
-dX
-<<<<<<< HEAD
-jq
-=======
-jn
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+VF
+ee
 ai
 hQ
 if
@@ -6136,11 +5373,7 @@ hB
 dH
 dM
 dY
-<<<<<<< HEAD
-jp
-=======
-jm
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+ee
 ai
 ey
 ig
@@ -6150,7 +5383,7 @@ ig
 iw
 eA
 iF
-ex
+eV
 eS
 fZ
 fZ
@@ -6178,11 +5411,7 @@ aG
 aS
 aY
 aS
-<<<<<<< HEAD
-iW
-=======
-iT
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+cw
 cw
 cw
 cj
@@ -6196,7 +5425,7 @@ ee
 ee
 hK
 ee
-fR
+ee
 ai
 ey
 ig
@@ -6234,11 +5463,7 @@ aG
 aT
 aT
 aT
-<<<<<<< HEAD
-iX
-=======
-iU
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+bt
 bt
 bM
 ck
@@ -6252,7 +5477,7 @@ ai
 ai
 ai
 ai
-eS
+ai
 ai
 hR
 ih
@@ -6264,7 +5489,7 @@ iD
 bj
 fL
 eS
-ga
+qn
 fZ
 fZ
 fZ
@@ -6284,26 +5509,18 @@ aa
 ae
 ae
 az
-iS
+aI
 aG
 aI
 aU
 ay
-hq
-<<<<<<< HEAD
-iY
+sD
+hv
 hv
 bN
 cl
-jd
-=======
-iV
-hv
-bN
-cl
-ja
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-cJ
+cz
+HN
 cz
 aX
 di
@@ -6312,7 +5529,7 @@ di
 di
 di
 di
-gt
+xT
 el
 di
 di
@@ -6320,7 +5537,7 @@ eK
 eK
 eK
 eK
-eK
+JB
 eK
 eK
 fQ
@@ -6349,17 +5566,13 @@ ai
 aQ
 aV
 aT
-bg
+KU
 cI
 cI
 cI
-cm
-<<<<<<< HEAD
-je
-=======
-jb
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-cI
+YZ
+OC
+Qs
 cy
 ai
 dj
@@ -6374,9 +5587,9 @@ dk
 dk
 eL
 eL
-js
 eL
 eL
+yZ
 eL
 eL
 fO
@@ -6403,19 +5616,15 @@ ao
 ai
 ai
 ai
-at
+aG
 aT
-hr
+CJ
 cI
 bD
 bE
 cn
-<<<<<<< HEAD
-jf
-=======
-jc
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-cI
+WU
+Qs
 cy
 ai
 dk
@@ -6426,21 +5635,17 @@ dk
 dk
 gx
 em
-hS
+sL
 eC
 eL
 eL
 fg
 fg
+PF
 fg
-fg
-<<<<<<< HEAD
-fg
-=======
 fM
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-eS
-gd
+ai
+uw
 gc
 gc
 gc
@@ -6465,17 +5670,13 @@ ai
 ai
 ai
 aT
-hr
+CJ
 cI
 bE
 bE
-co
-<<<<<<< HEAD
-jg
-=======
-jd
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-cI
+Sg
+pM
+Qs
 cy
 ai
 dk
@@ -6491,19 +5692,11 @@ eC
 eL
 eL
 fg
-<<<<<<< HEAD
-jt
-ju
-ju
-ju
-dd
-=======
-bp
-bC
-bC
-bC
-gI
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
+iy
+OS
+iy
+iy
+ai
 ge
 gm
 gw
@@ -6529,17 +5722,13 @@ aa
 ai
 ai
 ai
-bg
+KU
 cI
 bF
 bE
 cp
-<<<<<<< HEAD
-jh
-=======
-je
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-cI
+cy
+Qs
 cL
 ai
 dk
@@ -6556,7 +5745,7 @@ eL
 eL
 fg
 fm
-fw
+LY
 fD
 fN
 ai
@@ -6590,12 +5779,8 @@ ah
 ai
 ai
 ai
-<<<<<<< HEAD
-ji
-=======
-jf
->>>>>>> 6ad77fffe22175fe47e6f976cd3061aebf7ff5aa
-cI
+cy
+Qs
 cy
 ai
 dj
@@ -6606,13 +5791,13 @@ dt
 dt
 ef
 em
-jr
+dt
 dt
 eL
 eL
 fh
 iy
-fx
+PV
 fE
 iy
 ai
@@ -6664,7 +5849,7 @@ eM
 eL
 fg
 fm
-fy
+Wy
 iy
 iy
 ai
@@ -6708,7 +5893,7 @@ ai
 ai
 ai
 dZ
-eh
+Vh
 em
 hU
 ik
@@ -6716,9 +5901,9 @@ il
 im
 fg
 fn
-fz
+Bq
 iy
-bC
+iy
 ai
 ge
 go
@@ -6763,13 +5948,13 @@ ea
 ai
 ai
 ai
-ah
-ah
-ah
-ai
-ah
-ah
-ah
+MP
+SI
+SI
+aX
+KA
+ld
+HX
 ai
 ai
 ai
@@ -6815,13 +6000,13 @@ ai
 ai
 ai
 ai
-ah
-ah
-ah
-ai
-ah
-ah
-ah
+MP
+SI
+SI
+aX
+KA
+qC
+HX
 ai
 ai
 ai
@@ -6880,7 +6065,7 @@ ai
 ai
 ai
 gc
-gy
+gc
 gY
 he
 aa

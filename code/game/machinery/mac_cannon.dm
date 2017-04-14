@@ -23,6 +23,7 @@
 	var/obj/item/weapon/circuitboard/machine/B = new /obj/item/weapon/circuitboard/machine/mac_barrel(null)
 	B.apply_default_parts(src)
 	RefreshParts()
+	dir = EAST
 
 /obj/item/weapon/circuitboard/machine/mac_barrel
 	name = "circuit board (MAC cannon barrel)"
@@ -33,18 +34,19 @@
 							/obj/item/weapon/stock_parts/capacitor = 1,
 							/obj/item/weapon/stock_parts/console_screen = 1,)
 
-/obj/machinery/mac_barrel/proc/can_fire()
-	.= 0
+/obj/machinery/mac_barrel/proc/can_fire(console=FALSE)
+	. = 0
 	if(breech.loader)
 		return
 	if(breech.charge_process < 100)
 		return
 	if(breech.flags & NOPOWER)
 		return
-	if(breech.actuator.spent||!breech.actuator)
-		visible_message("\icon[src] <span class=notice>Error. Firing actuator missing or broken. Unable to fire.</span>")
-		playsound(loc,'sound/machines/buzz-sigh.ogg',50,0)
-		return
+	if(breech.actuator.spent || !breech.actuator)
+		if(!console)
+			visible_message("\icon[src] <span class=notice>Error. Firing actuator missing or broken. Unable to fire.</span>")
+			playsound(loc,'sound/machines/buzz-sigh.ogg',50,0)
+			return
 	return 1
 
 /obj/machinery/mac_barrel/proc/attempt_fire(var/datum/component/target_component)
@@ -65,7 +67,9 @@
 			explosion(breech,1,2,6)
 		else
 			var/obj/item/projectile/ship_projectile/mac_round/M = PoolOrNew(breech.loaded_shell.projectile,get_step(src,dir))
-			M.set_data(breech.loaded_shell.damage,breech.loaded_shell.evasion_mod / breech.alignment,breech.loaded_shell.shield_bust,target_component,breech.loaded_shell.armed)
+			if(breech.loaded_shell.armed)
+				M.attack_data = breech.loaded_shell.attack_data
+			M.target = target_component
 			M.setDir(src,dir)
 			M.starting = src.loc
 			M.fire()
@@ -93,7 +97,7 @@
 /obj/machinery/mac_barrel/proc/toggle_hatch() //just moves the functionality of the massdriver control into the mac cannon, cleaned up a bit
 	var/list/activated_doors = list()
 	for(var/obj/machinery/door/poddoor/M in machines)
-		if(M.id == id)
+		if(M.id && M.id == id)
 			activated_doors += M
 			spawn(0) M.open()
 	sleep(50)
@@ -158,6 +162,7 @@
 	RefreshParts()
 	create_reagents(1000)
 	reagents.add_reagent("oil",50)
+	dir = EAST
 
 /obj/machinery/mac_breech/on_reagent_change()
 	for(var/reagent in reagents.reagent_list)
@@ -309,7 +314,7 @@
 			icon_state = "mac_breech_o_a"
 			return
 		if(loaded_shell)
-			icon_state = "mac_breech_o_l"
+			icon_state = "mac_breech_o_i"
 			return
 		else
 			icon_state = "mac_breech_o"
@@ -318,7 +323,7 @@
 			icon_state = "mac_breech_a"
 			return
 		if(loaded_shell)
-			icon_state = "mac_breech_l"
+			icon_state = "mac_breech_i"
 			return
 		else
 			icon_state = "mac_breech"

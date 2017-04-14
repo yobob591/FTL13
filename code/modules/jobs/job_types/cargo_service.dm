@@ -4,18 +4,18 @@ Quartermaster
 /datum/job/qm
 	title = "Quartermaster"
 	flag = QUARTERMASTER
-	department_head = list("Head of Personnel")
+	department_head = list("Executive Officer")
 	department_flag = CIVILIAN
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the head of personnel"
+	supervisors = "the executive officer"
 	selection_color = "#d7b088"
 
 	outfit = /datum/outfit/job/quartermaster
 
-	access = list(access_maint_tunnels, access_cargo, access_mining, access_waste)
-	minimal_access = list(access_maint_tunnels, access_cargo, access_mining, access_waste)
+	access = list(access_maint_tunnels, access_cargo, access_mining, access_waste, access_external_airlocks)
+	minimal_access = list(access_maint_tunnels, access_cargo, access_mining, access_waste, access_external_airlocks)
 
 /datum/outfit/job/quartermaster
 	name = "Quartermaster"
@@ -33,24 +33,24 @@ Munitions Officer
 /datum/job/munitions_officer
 	title = "Munitions Officer"
 	flag = MUNITIONS
-	department_head = list("Head of Personnel")
+	department_head = list("Executive Officer")
 	department_flag = CIVILIAN
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the weapons officer, the head of personnel"
+	supervisors = "the weapons officer, the executive officer"
 	selection_color = "#e49f58"
 
 	outfit = /datum/outfit/job/munitions_officer
 
-	access = list(access_cargo, access_munitions, access_moffice, access_sec_doors, access_heads, access_helm)
-	minimal_access = list(access_cargo, access_munitions, access_moffice, access_sec_doors, access_heads, access_helm)
+	access = list(access_cargo, access_munitions, access_moffice, access_sec_doors, access_heads, access_helm, access_external_airlocks)
+	minimal_access = list(access_cargo, access_munitions, access_moffice, access_sec_doors, access_heads, access_helm, access_external_airlocks)
 
 /datum/outfit/job/munitions_officer
 	name = "Munitions Officer"
 
 	belt = /obj/item/device/pda
-	ears = /obj/item/device/radio/headset/heads/hop // for communicating with WO, will make new subtype just for him later
+	ears = /obj/item/device/radio/headset/heads/xo // for communicating with WO, will make new subtype just for him later
 	uniform = /obj/item/clothing/under/rank/mofficer
 	shoes = /obj/item/clothing/shoes/workboots
 	head = /obj/item/clothing/head/helmet/mofficer
@@ -62,18 +62,18 @@ Cargo Technician
 /datum/job/cargo_tech
 	title = "Cargo Technician"
 	flag = CARGOTECH
-	department_head = list("Head of Personnel")
+	department_head = list("Executive Officer")
 	department_flag = CIVILIAN
 	faction = "Station"
 	total_positions = 3
 	spawn_positions = 2
-	supervisors = "the quartermaster and the head of personnel"
+	supervisors = "the quartermaster and the executive officer"
 	selection_color = "#dcba97"
 
 	outfit = /datum/outfit/job/cargo_tech
 
-	access = list(access_maint_tunnels, access_cargo, access_mining, access_waste)
-	minimal_access = list(access_maint_tunnels, access_cargo, access_waste)
+	access = list(access_maint_tunnels, access_cargo, access_mining, access_waste, access_external_airlocks)
+	minimal_access = list(access_maint_tunnels, access_cargo, access_waste, access_external_airlocks)
 
 /datum/outfit/job/cargo_tech
 	name = "Cargo Technician"
@@ -89,18 +89,18 @@ Shaft Miner
 /datum/job/mining
 	title = "Shaft Miner"
 	flag = MINER
-	department_head = list("Head of Personnel")
+	department_head = list("Executive Officer")
 	department_flag = CIVILIAN
 	faction = "Station"
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "the quartermaster and the head of personnel"
+	supervisors = "the quartermaster and the executive officer"
 	selection_color = "#dcba97"
 
 	outfit = /datum/outfit/job/miner
 
-	access = list(access_maint_tunnels, access_cargo, access_mining)
-	minimal_access = list(access_mining)
+	access = list(access_maint_tunnels, access_cargo, access_mining, access_external_airlocks)
+	minimal_access = list(access_mining, access_external_airlocks)
 
 /datum/outfit/job/miner
 	name = "Shaft Miner"
@@ -128,12 +128,12 @@ Bartender
 /datum/job/bartender
 	title = "Bartender"
 	flag = BARTENDER
-	department_head = list("Head of Personnel")
+	department_head = list("Executive Officer")
 	department_flag = CIVILIAN
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the head of personnel"
+	supervisors = "the executive officer"
 	selection_color = "#bbe291"
 
 	outfit = /datum/outfit/job/bartender
@@ -159,12 +159,12 @@ Cook
 /datum/job/cook
 	title = "Cook"
 	flag = COOK
-	department_head = list("Head of Personnel")
+	department_head = list("Executive Officer")
 	department_flag = CIVILIAN
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 1
-	supervisors = "the head of personnel"
+	supervisors = "the executive officer"
 	selection_color = "#bbe291"
 	var/cooks = 0 //Counts cooks amount
 
@@ -204,12 +204,12 @@ Botanist
 /datum/job/hydro
 	title = "Botanist"
 	flag = BOTANIST
-	department_head = list("Head of Personnel")
+	department_head = list("Executive Officer")
 	department_flag = CIVILIAN
 	faction = "Station"
 	total_positions = 3
 	spawn_positions = 2
-	supervisors = "the head of personnel"
+	supervisors = "the executive officer"
 	selection_color = "#bbe291"
 
 	outfit = /datum/outfit/job/botanist
@@ -237,12 +237,12 @@ Janitor
 /datum/job/janitor
 	title = "Janitor"
 	flag = JANITOR
-	department_head = list("Head of Personnel")
+	department_head = list("Executive Officer")
 	department_flag = CIVILIAN
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 1
-	supervisors = "the head of personnel"
+	supervisors = "the executive officer"
 	selection_color = "#bbe291"
 	var/global/janitors = 0
 

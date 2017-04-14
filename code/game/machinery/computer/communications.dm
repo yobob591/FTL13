@@ -36,10 +36,16 @@ var/const/CALL_SHUTTLE_REASON_LENGTH = 12
 	var/status_display_freq = "1435"
 	var/stat_msg1
 	var/stat_msg2
-
+	
+	var/obj/machinery/hologram/comms_pad/linked_comms_pad
+	var/mob/communicator/curr_communicator
 
 /obj/machinery/computer/communications/New()
 	shuttle_caller_list += src
+	for(var/obj/machinery/hologram/comms_pad/pad in range(4, src))
+		if(!pad.console)
+			link_comms_pad(pad)
+			break
 	..()
 
 /obj/machinery/computer/communications/process()
@@ -388,9 +394,9 @@ var/const/CALL_SHUTTLE_REASON_LENGTH = 12
 		if(STATE_DEFAULT)
 			if (src.authenticated)
 				if(SSshuttle.emergencyLastCallLoc)
-					dat += "<BR>Most recent shuttle call/recall traced to: <b>[format_text(SSshuttle.emergencyLastCallLoc.name)]</b>"
+					dat += "<BR>Most recent shuttle arm/disarm traced to: <b>[format_text(SSshuttle.emergencyLastCallLoc.name)]</b>"
 				else
-					dat += "<BR>Unable to trace most recent shuttle call/recall signal."
+					dat += "<BR>Unable to trace most recent shuttle arm/disarm signal."
 				dat += "<BR>Logged in as: [auth_id]"
 				dat += "<BR>"
 				dat += "<BR>\[ <A HREF='?src=\ref[src];operation=logout'>Log Out</A> \]<BR>"
@@ -400,9 +406,9 @@ var/const/CALL_SHUTTLE_REASON_LENGTH = 12
 				if(SSshuttle.emergency)
 					switch(SSshuttle.emergency.mode)
 						if(SHUTTLE_IDLE, SHUTTLE_RECALL)
-							dat += "<BR>\[ <A HREF='?src=\ref[src];operation=callshuttle'>Call Emergency Shuttle</A> \]"
+							dat += "<BR>\[ <A HREF='?src=\ref[src];operation=callshuttle'>Arm Emergency Shuttle</A> \]"
 						else
-							dat += "<BR>\[ <A HREF='?src=\ref[src];operation=cancelshuttle'>Cancel Shuttle Call</A> \]"
+							dat += "<BR>\[ <A HREF='?src=\ref[src];operation=cancelshuttle'>Cancel Shuttle Arm</A> \]"
 				dat += "<BR>\[ <A HREF='?src=\ref[src];operation=status'>Set Status Display</A> \]"
 				if (src.authenticated==2)
 					dat += "<BR><BR><B>Captain Functions</B>"
@@ -517,7 +523,7 @@ var/const/CALL_SHUTTLE_REASON_LENGTH = 12
 	dat += "<input type='hidden' name='src' value='\ref[src]'>"
 	dat += "<input type='hidden' name='operation' value='[ai_interface ? "ai-callshuttle2" : "callshuttle2"]'>"
 	dat += "<b>Nature of emergency:</b><BR> <input type='text' id='reasonfield' name='call' style='width:250px; background-color:#FFDDDD; onkeydown='getLength() onkeyup='getLength()' onkeypress='getLength()'>"
-	dat += "<BR>Are you sure you want to call the shuttle? \[ <a href='#' onclick='submit()'>Call</a> \]"
+	dat += "<BR>Are you sure you want to arm the shuttle? \[ <a href='#' onclick='submit()'>Call</a> \]"
 	return dat
 
 /obj/machinery/computer/communications/proc/get_cancel_shuttle_form()
@@ -527,7 +533,7 @@ var/const/CALL_SHUTTLE_REASON_LENGTH = 12
 	dat += "<input type='hidden' name='src' value='\ref[src]'>"
 	dat += "<input type='hidden' name='operation' value='cancelshuttle2'>"
 
-	dat += "<BR>Are you sure you want to cancel the shuttle? \[ <a href='#' onclick='submit()'>Cancel</a> \]"
+	dat += "<BR>Are you sure you want to disarm the shuttle? \[ <a href='#' onclick='submit()'>Cancel</a> \]"
 	return dat
 
 /obj/machinery/computer/communications/proc/interact_ai(mob/living/silicon/ai/user)
@@ -546,7 +552,7 @@ var/const/CALL_SHUTTLE_REASON_LENGTH = 12
 			dat += "<BR>\[ <A HREF='?src=\ref[src];operation=ai-messagelist'>Message List</A> \]"
 			dat += "<BR>\[ <A HREF='?src=\ref[src];operation=ai-viewobjectives'>View Objectives</A> \]"
 			if(SSshuttle.emergency && SSshuttle.emergency.mode == SHUTTLE_IDLE)
-				dat += "<BR>\[ <A HREF='?src=\ref[src];operation=ai-callshuttle'>Call Emergency Shuttle</A> \]"
+				dat += "<BR>\[ <A HREF='?src=\ref[src];operation=ai-callshuttle'>Arm Emergency Shuttle</A> \]"
 			dat += "<BR>\[ <A HREF='?src=\ref[src];operation=ai-status'>Set Status Display</A> \]"
 			dat += "<BR><BR><B>Special Functions</B>"
 			dat += "<BR>\[ <A HREF='?src=\ref[src];operation=ai-announce'>Make an Announcement</A> \]"
@@ -660,8 +666,76 @@ var/const/CALL_SHUTTLE_REASON_LENGTH = 12
 /obj/machinery/computer/communications/Destroy()
 	shuttle_caller_list -= src
 	SSshuttle.autoEvac()
+	if(curr_communicator)
+		close_channel()
+	if(linked_comms_pad)
+		unlink_comms_pad()
 	return ..()
 
 /obj/machinery/computer/communications/proc/overrideCooldown()
 	var/obj/item/weapon/circuitboard/computer/communications/CM = circuit
 	CM.lastTimeUsed = 0
+
+/obj/machinery/computer/communications/attack_ghost(mob/user)
+	if(!user || !check_rights(R_FUN))
+		return
+	if(alert(user,"Would you like to create a centcomm hologram?","Robust hologram creator","Yes","No") != "Yes")
+		return ..()
+	var/mob/communicator/admin/C = new
+	C.original_ghost = user
+	C.admin_select_appearance()
+	C.ckey = user.ckey
+	open_channel(C)
+
+/obj/machinery/computer/communications/proc/link_comms_pad(obj/machinery/hologram/comms_pad/pad)
+	if(!pad)
+		return
+	unlink_comms_pad()
+	linked_comms_pad = pad
+	if(linked_comms_pad.console) // I don't know why this would ever happen but check for it anyways.
+		linked_comms_pad.console.unlink_comms_pad()
+	linked_comms_pad.console = src
+	if(curr_communicator)
+		linked_comms_pad.master = curr_communicator
+		linked_comms_pad.set_on(1)
+		curr_communicator.loc = linked_comms_pad.loc
+		curr_communicator.reset_perspective()
+
+/obj/machinery/computer/communications/proc/unlink_comms_pad()
+	if(!linked_comms_pad)
+		return
+	linked_comms_pad.console = null
+	if(curr_communicator)
+		linked_comms_pad.master = null
+		linked_comms_pad.set_on(0)
+		curr_communicator.loc = src
+		curr_communicator.reset_perspective(src)
+	linked_comms_pad = null
+
+/obj/machinery/computer/communications/proc/open_channel(var/mob/communicator/M)
+	if(!M)
+		return
+	close_channel()
+	if(M.curr_console)
+		M.curr_console.close_channel()
+	curr_communicator = M
+	curr_communicator.curr_console = src
+	if(linked_comms_pad)
+		linked_comms_pad.set_on(1)
+		linked_comms_pad.master = curr_communicator
+		curr_communicator.loc = linked_comms_pad.loc
+		curr_communicator.reset_perspective()
+	else
+		curr_communicator.loc = src
+		curr_communicator.reset_perspective(src)
+
+/obj/machinery/computer/communications/proc/close_channel()
+	if(!curr_communicator)
+		return
+	curr_communicator.curr_console = null
+	curr_communicator.loc = null // Back to nullspace you go.
+	curr_communicator.reset_perspective()
+	if(linked_comms_pad)
+		linked_comms_pad.set_on(0)
+		linked_comms_pad.master = null
+	curr_communicator = null

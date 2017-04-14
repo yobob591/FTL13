@@ -799,7 +799,7 @@ var/global/list/possible_items_special = list()
 
 	var/list/heads = ticker.mode.get_living_heads()
 	for(var/datum/mind/head in heads)
-		if(head in ticker.mode.changelings) //Looking at you HoP.
+		if(head in ticker.mode.changelings) //Looking at you XO.
 			continue
 		if(needed_heads)
 			department_minds += head
@@ -888,7 +888,7 @@ var/global/list/possible_items_special = list()
 	return 0
 
 //A subtype of impersonate_derpartment
-//This subtype always picks as many command staff as it can (HoS,HoP,Cap,CE,CMO,RD)
+//This subtype always picks as many command staff as it can (HoS,XO,Cap,CE,CMO,RD)
 //and tasks the lings with killing and replacing them
 /datum/objective/changeling_team_objective/impersonate_department/impersonate_heads
 	explanation_text = "Have X or more heads of staff escape on the shuttle disguised as heads, while the real heads are dead"
@@ -928,18 +928,26 @@ var/global/list/possible_items_special = list()
 /datum/objective/ftl/delivery/find_target()
 	var/datum/supply_pack/delivery_mission/U = new /datum/supply_pack/delivery_mission
 	var/obj_type
-	// Syndicate documents
-	source_planet = SSstarmap.pick_station("syndicate")
-	obj_type = /obj/item/documents/syndicate
-	item_name = "syndicate intelligence documents"
-	
+
+	switch(rand(1,2))
+		if(1)
+			// Syndicate documents
+			source_planet = SSstarmap.pick_station("syndicate")
+			obj_type = /obj/item/documents/syndicate
+			item_name = "syndicate intelligence documents"
+		if(2)
+			// a fucking damaged bomb
+			source_planet = SSstarmap.pick_station("nanotrasen")
+			obj_type = /obj/structure/volatile_bomb
+			item_name = "the volatile bomb"
+
 	U.objective = src
 	U.contains = list(obj_type)
 	U.crate_name = "[item_name] crate"
 	U.name = item_name
 	SSshuttle.supply_packs[U.type] = U
 	source_planet.station.stock[U] = 1
-	
+
 	target_planet = SSstarmap.pick_station("nanotrasen")
 	..()
 

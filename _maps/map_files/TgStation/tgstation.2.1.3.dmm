@@ -910,7 +910,7 @@
 /area/ai_monitored/security/armory)
 "acm" = (
 /obj/machinery/power/apc{
-	cell_type = 5000;
+	
 	dir = 4;
 	name = "Armory APC";
 	pixel_x = 24;
@@ -21821,7 +21821,7 @@
 /area/bridge)
 "aWW" = (
 /obj/machinery/power/apc{
-	cell_type = 5000;
+	
 	dir = 2;
 	name = "Bridge APC";
 	pixel_y = -24
@@ -23700,7 +23700,7 @@
 /area/quartermaster/storage)
 "bbu" = (
 /obj/machinery/power/apc{
-	cell_type = 2500;
+	
 	dir = 1;
 	name = "Captain's Office APC";
 	pixel_y = 24
@@ -24048,7 +24048,7 @@
 "bco" = (
 /obj/machinery/navbeacon{
 	codes_txt = "patrol;next_patrol=Dorm";
-	location = "HOP2"
+	location = "XO2"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
@@ -24506,7 +24506,7 @@
 /area/maintenance/port)
 "bdv" = (
 /obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=HOP2";
+	codes_txt = "patrol;next_patrol=XO2";
 	location = "Stbd"
 	},
 /obj/structure/disposalpipe/segment{
@@ -24806,7 +24806,7 @@
 /area/turret_protected/ai_upload)
 "bed" = (
 /obj/machinery/power/apc{
-	cell_type = 5000;
+	
 	dir = 2;
 	name = "Upload APC";
 	pixel_y = -24
@@ -24908,7 +24908,7 @@
 "beo" = (
 /obj/machinery/navbeacon{
 	codes_txt = "patrol;next_patrol=Stbd";
-	location = "HOP"
+	location = "XO"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
@@ -28565,7 +28565,7 @@
 /area/crew_quarters/heads)
 "bms" = (
 /obj/machinery/door/airlock/command{
-	name = "Head of Personnel";
+	name = "Executive Officer";
 	req_access = null;
 	req_access_txt = "57"
 	},
@@ -29218,19 +29218,19 @@
 /area/crew_quarters/heads)
 "bnP" = (
 /obj/machinery/button/flasher{
-	id = "hopflash";
+	id = "xoflash";
 	pixel_x = 6;
 	pixel_y = 36
 	},
 /obj/machinery/button/door{
-	id = "hop";
+	id = "xo";
 	name = "Privacy Shutters Control";
 	pixel_x = 6;
 	pixel_y = 25;
 	req_access_txt = "28"
 	},
 /obj/machinery/button/door{
-	id = "hopqueue";
+	id = "xoqueue";
 	name = "Queue Shutters Control";
 	pixel_x = -4;
 	pixel_y = 25;
@@ -29809,8 +29809,8 @@
 	dir = 4
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "hopqueue";
-	name = "HoP Queue Shutters"
+	id = "xoqueue";
+	name = "XO Queue Shutters"
 	},
 /turf/open/floor/plasteel/loadingarea{
 	dir = 8
@@ -29836,7 +29836,7 @@
 	base_state = "rightsecure";
 	dir = 4;
 	icon_state = "rightsecure";
-	name = "Head of Personnel's Desk";
+	name = "Executive Officer's Desk";
 	req_access = null;
 	req_access_txt = "57"
 	},
@@ -29844,12 +29844,12 @@
 	dir = 4
 	},
 /obj/machinery/flasher{
-	id = "hopflash";
+	id = "xoflash";
 	pixel_x = 0;
 	pixel_y = 28
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "hop";
+	id = "xo";
 	layer = 2.9;
 	name = "Privacy Shutters"
 	},
@@ -30562,7 +30562,7 @@
 	d2 = 2
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "hop";
+	id = "xo";
 	layer = 2.9;
 	name = "Privacy Shutters"
 	},
@@ -31322,7 +31322,7 @@
 	},
 /obj/structure/cable,
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "hop";
+	id = "xo";
 	layer = 2.9;
 	name = "Privacy Shutters"
 	},
@@ -31833,7 +31833,7 @@
 	dir = 4
 	},
 /obj/effect/landmark/start{
-	name = "Head of Personnel"
+	name = "Executive Officer"
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/heads)
@@ -32396,13 +32396,13 @@
 "bue" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Head of Personnel's Desk";
+	department = "Executive Officer's Desk";
 	departmentType = 5;
-	name = "Head of Personnel RC";
+	name = "Executive Officer RC";
 	pixel_y = -30
 	},
 /obj/machinery/camera{
-	c_tag = "Head of Personnel's Office";
+	c_tag = "Executive Officer's Office";
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -32766,7 +32766,7 @@
 "buO" = (
 /obj/structure/table,
 /obj/item/weapon/folder/blue,
-/obj/item/weapon/stamp/hop,
+/obj/item/weapon/stamp/xo,
 /turf/open/floor/plasteel,
 /area/crew_quarters/heads)
 "buP" = (
@@ -33421,8 +33421,8 @@
 /area/hallway/primary/central)
 "bwg" = (
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "hopqueue";
-	name = "HoP Queue Shutters"
+	id = "xoqueue";
+	name = "XO Queue Shutters"
 	},
 /turf/open/floor/plasteel/loadingarea{
 	dir = 4
@@ -33446,7 +33446,7 @@
 	name = "Station Intercom (General)";
 	pixel_x = -28
 	},
-/obj/structure/closet/secure_closet/hop,
+/obj/structure/closet/secure_closet/xo,
 /turf/open/floor/plasteel/blue/side{
 	dir = 10
 	},
@@ -34196,7 +34196,7 @@
 	})
 "bxG" = (
 /obj/machinery/door/airlock/command{
-	name = "Head of Personnel";
+	name = "Executive Officer";
 	req_access = null;
 	req_access_txt = "57"
 	},
@@ -35333,7 +35333,7 @@
 /area/hallway/primary/central)
 "bAj" = (
 /obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=HOP";
+	codes_txt = "patrol;next_patrol=XO";
 	location = "CHE"
 	},
 /turf/open/floor/plasteel,
@@ -44218,7 +44218,7 @@
 /area/medical/virology)
 "bSX" = (
 /obj/machinery/power/apc{
-	cell_type = 5000;
+	
 	dir = 1;
 	name = "Virology APC";
 	pixel_x = 0;
@@ -45872,7 +45872,7 @@
 	dir = 1
 	},
 /obj/machinery/power/apc{
-	cell_type = 5000;
+	
 	dir = 1;
 	name = "Telecoms Server APC";
 	pixel_x = 0;
@@ -48145,7 +48145,7 @@
 /area/tcommsat/computer)
 "cbp" = (
 /obj/machinery/power/apc{
-	cell_type = 5000;
+	
 	dir = 4;
 	name = "CE Office APC";
 	pixel_x = 24;
@@ -50562,7 +50562,7 @@
 /area/engine/engineering)
 "cgx" = (
 /obj/effect/landmark/start{
-	name = "Station Engineer"
+	name = "Ship Engineer"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -51350,7 +51350,7 @@
 /area/engine/engineering)
 "cib" = (
 /obj/machinery/power/apc{
-	cell_type = 15000;
+	
 	dir = 1;
 	name = "Engineering APC";
 	pixel_x = 0;
@@ -51843,7 +51843,7 @@
 	dir = 1
 	},
 /obj/effect/landmark/start{
-	name = "Station Engineer"
+	name = "Ship Engineer"
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
@@ -53763,7 +53763,7 @@
 /area/engine/engineering)
 "cny" = (
 /obj/effect/landmark/start{
-	name = "Station Engineer"
+	name = "Ship Engineer"
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
@@ -54110,7 +54110,7 @@
 /area/engine/engineering)
 "coc" = (
 /obj/effect/landmark/start{
-	name = "Station Engineer"
+	name = "Ship Engineer"
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
 /turf/open/floor/plasteel,
@@ -54787,7 +54787,7 @@
 /area/engine/engineering)
 "cpu" = (
 /obj/effect/landmark/start{
-	name = "Station Engineer"
+	name = "Ship Engineer"
 	},
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -55181,7 +55181,7 @@
 /area/engine/engineering)
 "cqj" = (
 /obj/effect/landmark/start{
-	name = "Station Engineer"
+	name = "Ship Engineer"
 	},
 /turf/open/floor/plating,
 /area/engine/engineering)
@@ -58367,7 +58367,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/power/apc{
-	cell_type = 5000;
+	
 	dir = 2;
 	name = "AI Chamber APC";
 	pixel_y = -24
@@ -59904,7 +59904,7 @@
 	},
 /obj/machinery/power/apc{
 	dir = 2;
-	name = "Head of Personnel APC";
+	name = "Executive Officer APC";
 	pixel_y = -24
 	},
 /obj/structure/cable{

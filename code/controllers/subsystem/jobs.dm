@@ -2,13 +2,15 @@ var/datum/subsystem/job/SSjob
 
 /datum/subsystem/job
 	name = "Jobs"
-	init_order = 5
+	init_order = 100002
 	flags = SS_NO_FIRE
 
 	var/list/occupations = list()		//List of all jobs
 	var/list/unassigned = list()		//Players who need jobs
 	var/list/job_debug = list()			//Debug info
 	var/initial_players_to_assign = 0 	//used for checking against population caps
+
+	var/list/prioritized_jobs = list()
 
 /datum/subsystem/job/New()
 	NEW_SS_GLOBAL(SSjob)
@@ -400,8 +402,11 @@ var/datum/subsystem/job/SSjob
 		H << "<b>You are playing a job that is important for Game Progression. If you have to disconnect, please notify the admins via adminhelp.</b>"
 	if(config.minimal_access_threshold)
 		H << "<FONT color='blue'><B>As this station was initially staffed with a [config.jobs_have_minimal_access ? "full crew, only your job's necessities" : "skeleton crew, additional access may"] have been added to your ID card.</B></font>"
-	return 1
 
+	if(job && H)
+		job.equip_items(H)
+
+	return H
 
 /datum/subsystem/job/proc/setup_officer_positions()
 	var/datum/job/J = SSjob.GetJob("Security Officer")

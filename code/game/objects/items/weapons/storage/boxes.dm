@@ -75,6 +75,7 @@
 	new /obj/item/weapon/tank/internals/emergency_oxygen/engi(src)
 	new /obj/item/weapon/crowbar/red(src)
 	new /obj/item/weapon/reagent_containers/hypospray/medipen(src)
+	new /obj/item/clothing/suit/space/hardsuit/disposable(src)
 
 
 // Engineer survival box
@@ -83,6 +84,7 @@
 	new /obj/item/clothing/mask/breath(src)
 	new /obj/item/weapon/tank/internals/emergency_oxygen/engi(src)
 	new /obj/item/weapon/reagent_containers/hypospray/medipen(src)
+	new /obj/item/clothing/suit/space/hardsuit/disposable(src)
 
 /obj/item/weapon/storage/box/engineer/radio/New()
 	..()
@@ -93,6 +95,7 @@
 	..()
 	new /obj/item/clothing/mask/gas/syndicate(src)
 	new /obj/item/weapon/tank/internals/emergency_oxygen/engi(src)
+	new /obj/item/clothing/suit/space/hardsuit/disposable(src)
 
 // Security survival box
 /obj/item/weapon/storage/box/security/New()
@@ -100,6 +103,7 @@
 	new /obj/item/clothing/mask/gas/sechailer(src)
 	new /obj/item/weapon/tank/internals/emergency_oxygen(src)
 	new /obj/item/weapon/reagent_containers/hypospray/medipen(src)
+	new /obj/item/clothing/suit/space/hardsuit/disposable(src)
 
 /obj/item/weapon/storage/box/security/radio/New()
 	..()
@@ -572,6 +576,16 @@
 	..()
 	for(var/i in 1 to 7)
 		new /obj/item/weapon/grenade/chem_grenade/metalfoam(src)
+
+/obj/item/weapon/storage/box/smartmetalfoam
+	name = "box of smart metal foam grenades"
+	desc = "To be used to rapidly seal hull breaches"
+	icon_state = "flashbang"
+
+/obj/item/weapon/storage/box/smartmetalfoam/New()
+	..()
+	for(var/i in 1 to 7)
+		new /obj/item/weapon/grenade/chem_grenade/smartmetalfoam(src)
 
 /obj/item/weapon/storage/box/hug
 	name = "box of hugs"
